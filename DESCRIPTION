@@ -1,10 +1,10 @@
 Package: rjscript
 Version: 0.0.1
-Date: 2008-04-28
+Date: 2010-04-19
 Title: rjscript
 Author: Shane Conway
 Maintainer: Shane Conway <shane.conway@gmail.com>
-Description: Executes script languages that run on the JVM from R.
+Description: Executes script languages that run on the JVM from R using javax.script.
 Depends: R (>= 2.7.0), rJava (>= 0.5-0)
-SystemRequirements: Java (>= 5.0)
+SystemRequirements: Java (>= 6.0)
 License: GPL-3

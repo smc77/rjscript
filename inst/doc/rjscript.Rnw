@@ -1,0 +1,48 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[OT1]{fontenc}
+\usepackage{url}
+\usepackage{Sweave}
+\begin{document}
+
+% \VignetteIndexEntry{helloJavaWorld}
+
+\title{RJScript: An R Package to Run Script Languages on the JVM}
+\author{Shane Conway}
+\date{2010-04-19}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+
+\texttt{RJScript} provides a simple wrapper for the javax.script library in Java, 
+which enables running of many Java scripting languages, including JavaScript, Groovy, JRuby, ...
+
+See https://scripting.dev.java.net/ for more examples of Java scripting languages.
+
+\section{JavaScript for R: the motivating example}
+
+This was motivated by my creation of the \texttt{webvis} package for web visualizations.  
+I was very impressed with some of the visualizations that were being created with tools
+such as Protovis out of Stanford, and wanted to provide JavaScript visualizations from 
+within R.  The primary was of achieving this currently is to use the browseURL() function
+and launch the JavaScript from within a browser.
+
+
+
+\section{Structure of the package}
+
+We create a folder, \texttt{helloJavaWorld}, which will be the root folder
+of our \texttt{helloJavaWorld} package. For detailed information on R packages
+and their structure, the reader is referred to the Writing R Extensions manual. 
+
+\section{Acknowledgements}
+
+Simon Urbanek is responsible for creating the excellent \texttt{rJava} package, which
+all Java development with R and is an invaluable resource.
+
+Java's javax.script library owes a lot of credit to the Mozilla foundation for 
+their Rhino JavaScript engine.  
+
+\end{document}

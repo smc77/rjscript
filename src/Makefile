@@ -3,7 +3,6 @@ JAR=jar
 JAVADOC=javadoc
 JDKVER=1.6
 JFLAGS=-source $(JDKVER) -target $(JDKVER)
-JAPIURL=http://java.sun.com/j2se/1.4.2/docs/api
 
 DOCSDIR=javaDoc
 
